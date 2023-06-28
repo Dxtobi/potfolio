@@ -35,10 +35,9 @@
 										<div
 											class=" absolute top-0 left-0 h-full w-full bg-[#000000df] p-2 rounded-lg text-white flex flex-col gap-3 justify-end"
 										>
-											<h1 class="text-lg font-bold">Project name</h1>
+											<h1 class="text-lg font-bold">Demo name</h1>
 											<p class=" line-clamp-2">
-												Project all abou this and that and maby other things and a lot with some
-												other things inclusive
+												Working On This
 											</p>
 											<div class="flex gap-2 items-end justify-between text-sm">
 												<a href="/" target="_blank" class="flex items-center gap-1"

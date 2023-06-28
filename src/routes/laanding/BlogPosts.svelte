@@ -4,7 +4,7 @@
 	import { onMount, afterUpdate } from 'svelte';
 
 
-	const arrOb = [1, 1, 1, 1, 1, 1];
+	const arrOb = [1, 1, 1, 1];
 	
 	let animate = false;
 	onMount(() => {
