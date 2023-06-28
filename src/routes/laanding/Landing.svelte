@@ -115,8 +115,8 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>WELCOME PAGE FOR TOBI-JAO</title>
+	<meta name="description" content="Discover a captivating portfolio website showcasing a collection of exceptional work. Explore the creative vision and artistic talent of TOBi-JAO" />
 </svelte:head>
 
 <section class="overflow-clip">
