@@ -134,7 +134,7 @@
 				</section>
 
 				<!-- tools i use -->
-				<section id="tools" bind:this={node} class="bg-blue-400 min-h-screen">
+				<section id="tools" bind:this={node} class="bg-blue-400 min-h-screen overflow-x-clip">
 					<ToolsList {intersecting}  />
 				</section>
 

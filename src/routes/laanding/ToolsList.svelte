@@ -38,7 +38,7 @@
 	
 </script>
 
-<section class="w-full md:w-[70%] m-auto grid place-items-center min-h-[90vh]" >
+<section class="w-full md:w-[70%] m-auto grid place-items-center min-h-[90vh] overflow-x-clip" >
 					<div class="p-5 w-full">
 						<div class="my-5 text-2xl w-fit">
 							<div>Recently Used</div>
