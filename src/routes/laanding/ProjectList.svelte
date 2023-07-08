@@ -10,7 +10,7 @@
 	
 	
 	const arrOb = [{app:"https://codehunters.vercel.app/", name:"CodeHunters", disc:'A developers website were one can put bounty on bugs', img:'https://pbs.twimg.com/media/F0ipvOfX0AAevdx?format=jpg&name=small'},
-	 {app:"https://sumerizer.vercel.app/", name:"ShortMan", disc:'An AI article summerier for turning long text into shorter texts', img:'https://pbs.twimg.com/media/Fzs4ZnWWAAAC_pq?format=jpg&name=medium'},
+	 {app:"https://sumerizer.vercel.app/", name:"ShortMan", disc:'An AI article summarizer for turning long text into shorter texts', img:'https://pbs.twimg.com/media/Fzs4ZnWWAAAC_pq?format=jpg&name=medium'},
 	{app:"https://emartsales.vercel.app/", name:"emartsales", disc:'(DEMO) An E-commerce website were buyers can contact sellers before purchasing the product',img:'https://pbs.twimg.com/media/Frh-6heX0AEpm6k?format=png&name=small'},
 	 {app:"https://cardsio.vercel.app/", name:"cardsio", disc:'A uni profile website', img:'https://pbs.twimg.com/media/FpQ1Tv5WcAAWZIO?format=jpg&name=900x900'},
 	 {app:"https://bigsalesmix.web.app/", name:"bigsalesmix", disc:'(DEMO) A shop front for a heir collection mobil view only', img:'https://pbs.twimg.com/media/F0dBU27WYBwDWXY?format=jpg&name=medium'},
@@ -41,7 +41,7 @@
 										<div
 											class=" absolute bottom-0 left-0 h-fit w-full bg-[#000000d5] p-2 rounded-b-lg text-white flex flex-col gap-3 justify-end"
 										>
-											<h1 class="text-lg font-bold">{ob.name}</h1>
+											<h1 class="text-lg font-bold capitalize">{ob.name}</h1>
 											<p class=" line-clamp-2">
 											{ob.disc}
 											</p>
