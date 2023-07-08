@@ -39,7 +39,7 @@
 									<div class="h-full w-full relative rounded-lg">
 										<img class="w-full h-full object-cover rounded-lg" src={ob.img} alt="" />
 										<div
-											class=" absolute bottom-0 left-0 h-fit w-full bg-[#000000d5] p-2 rounded-b-lg text-white flex flex-col gap-3 justify-end"
+											class=" absolute bottom-0 left-0 h-full w-full bg-[#000000d5] p-2 rounded-lg text-white flex flex-col gap-3 justify-end"
 										>
 											<h1 class="text-lg font-bold capitalize">{ob.name}</h1>
 											<p class=" line-clamp-2">
