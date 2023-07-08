@@ -11,7 +11,7 @@
 		animate = true;
 	});
 
-	export let correctElement
+	// export let correctElement
 
 	/**
 	 * @type {HTMLElement}
@@ -29,7 +29,8 @@
 						</div>
 						<div class="grid grid-cols-1 md:grid-cols-3 gap-3 justify-between">
 							{#each arrOb as ob, i}
-								<a
+							No blog post yet
+								<!-- <a
 									href="/"
 									class=" shadow-lg border border-[#707070] rounded-lg w-full my-5"
 									in:fly={{ x: -200, duration: 9800 }}
@@ -44,7 +45,7 @@
 											</p>
 										</div>
 									</div>
-								</a>
+								</a> -->
 							{/each}
 						</div>
 					</div>

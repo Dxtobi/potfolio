@@ -10,7 +10,7 @@
 		animate = true;
 	});
 
-    export let correctElement
+    // export let correctElement
 
 </script>
 
@@ -28,16 +28,16 @@
 							{#each services as ser, i}
 								<a
 									href="/"
-									class="h-[30vh] w-full shadow-2xl border border-[#03910c] rounded-lg"
+									class=" w-full shadow-2xl border rounded-t-lg h-fit"
 									transition:fly={{ x: -200, duration: 800 }}
 								>
-									<div class="h-full w-full relative rounded-lg">
-										<img class="w-full h-full object-cover rounded-lg " src={ser.img} alt="" />
+									<div class=" w-full  rounded-b-lg">
+										<img class="w-full h-full object-cover rounded-t-lg " src={ser.img} alt="" />
 										<div
-											class=" capitalize absolute bottom-0 left-0 h-1/2 w-full bg-[#000000df] backdrop-blur-[4px] p-2 rounded-lg text-white flex flex-col gap-3 justify-center items-center"
+											class=" capitalize bottom-0 left-0 h-1/2 w-full bg-[#000000df] backdrop-blur-[4px] p-2 rounded-b-lg text-white flex flex-col gap-3"
 										>
 											<h1 class="text-lg font-bold uppercase">{ser.name}</h1>
-											<p class=" line-clamp-3 text-center">
+											<p class="">
 												{ser.disc}
 											</p>
 										</div>

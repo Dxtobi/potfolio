@@ -28,7 +28,7 @@
 	});
 
     
-    export let correctElement
+    // export let correctElement
 </script>
 
 <section

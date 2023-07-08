@@ -13,6 +13,7 @@ font-family: 'Montserrat', sans-serif; */
 
 *{
     font-family: 'Montserrat', sans-serif; 
+    outline: none;
 }
 
 .logo-font{

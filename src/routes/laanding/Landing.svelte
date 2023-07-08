@@ -125,12 +125,12 @@
 			<!-- top section -->
 			<div>
 				<section id="top">
-					<TopComponent {correctElement}/>
+					<TopComponent />
 				</section>
 
 				<!-- my projects -->
-				<section id="projects" class="mb-6">
-					<ProjectList  {correctElement}/>
+				<section id="projects" class="pb-6 ">
+					<ProjectList  />
 				</section>
 
 				<!-- tools i use -->
@@ -140,22 +140,22 @@
 
 				<!-- service list -->
 				<section id="service">
-					<ServiceList  {correctElement}/>
+					<ServiceList />
 				</section>
 
 				<!-- blog posts -->
 				<section id="blog">
-					<BlogPosts  {correctElement}/>
+					<BlogPosts  />
 				</section>
 
 				<!-- Contact -->
 				<div id="contact">
-					<Contact  {correctElement}/>
+					<Contact  />
 				</div>
 
 				<div
 					use:dragMe
-					class=" shadow-2xl font-exxtralight robo-font backdrop-blur-sm bg-[#e7e7e787] border-2 text-[#707070] border-[#7c7c7c] rounded-full py-2 px-5 justify-between flex w-1/2 md:w-[20%]"
+					class="hidden shadow-2xl font-exxtralight robo-font backdrop-blur-sm bg-[#e7e7e787] border-2 text-[#707070] border-[#7c7c7c] rounded-full py-2 px-5 justify-between md:flex w-1/2 md:w-[20%]"
 				>
 					
 					{#if correctElement !== "#top" }

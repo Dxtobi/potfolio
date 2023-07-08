@@ -8,7 +8,7 @@
 	{name:'twitter', img:'/twitter.gif', link:'https://twitter.com/programmer_dex'},
 	{name:'whatsapp', img:'/whatsapp.gif', link:'https://api.whatsapp.com/send?phone=2349064923080&text=Hello%20JAO'},
 	{name:'Linkedin', img:'/github.gif', link:'https://github.com/Dxtobi/'}];
-	export let correctElement
+	// export let correctElement
 </script>
 
 <section class="w-full md:w-[70%] m-auto grid place-items-center min-h-[90vh]">

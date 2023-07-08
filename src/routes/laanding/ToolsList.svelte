@@ -31,11 +31,6 @@
 		{ name: 'powerBi', icon: 'https://img.icons8.com/color/48/power-bi.png' }
 	];
 
-	
-	
-
- 
-	
 </script>
 
 <section class="w-full md:w-[70%] m-auto grid place-items-center min-h-[90vh] overflow-x-clip" >

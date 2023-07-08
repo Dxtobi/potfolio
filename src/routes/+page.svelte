@@ -1,7 +1,8 @@
 <script>
 	import Landing from "./laanding/Landing.svelte";
 
-	
+	export let data;
+	console.log(data)
 </script>
 
 <svelte:head>
