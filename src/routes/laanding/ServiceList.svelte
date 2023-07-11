@@ -3,46 +3,58 @@
 	import { fly, fade, slide } from 'svelte/transition';
 	import { onMount, afterUpdate } from 'svelte';
 	
-	const services = [{ name: 'build websites', disc: 'Web development backend / frontend', img: '/webdevv.png' }, { name: 'Bussiness data analysis', disc: 'lets  boost your business with the power of data analyses (Excel and PowerBi)', img: '/dataanaly.jfif' },{ name: 'graphic design', disc: 'professional graphic design', img: '/graphics.jfif' }];
+	const services = [
+		{ name: 'web development', disc: 'frontend / backend', img: '/webdev.svg', p:'61+' },
+	 { name: 'Business data analysis', disc: '(Excel and PowerBi)', img: '/an.svg', p:'3+' },
+	{ name: 'graphic design', disc: 'professional graphic design', img: '/gd.svg', p:'100+' },
+	{ name: 'mobil development', disc: 'react native, svelte native', img: '/md.svg', p:'2+' }
+];
 	
 	let animate = false;
 	onMount(() => {
 		animate = true;
 	});
 
-    // export let correctElement
+	/**
+	 * @type {boolean}
+	 */
+	 export let intersecting
+	 console.log(intersecting)
 
 </script>
 
-<section class="w-full md:w-[70%] m-auto grid place-items-center min-h-[90vh]">
-					<div class="p-5 w-full">
+<section class="w-full md:w-[70%] m-auto grid place-items-center min-h-[100vh]">
+					<div class="p-2 w-full">
 						<div class="my-5 text-2xl w-fit">
-							<div>Services</div>
+							<div class="custom-text">Services</div>
 							<div class="w-full flex gap-3 my-2">
 								<span class="w-[20%] h-[4px] rounded-full bg-[#1198f8]" />
 								<span class="w-[10%] h-[4px] rounded-full bg-[#f8c211]" />
 								<span class="w-[60%] h-[4px] rounded-full bg-[#03910c]" />
 							</div>
 						</div>
-						<div class="grid grid-cols-1 md:grid-cols-3 gap-3 justify-between">
+						<div class="grid grid-cols-2 md:grid-cols-3 gap-3 justify-between">
 							{#each services as ser, i}
+								{#if intersecting}
 								<a
-									href="/"
-									class=" w-full shadow-2xl border rounded-t-lg h-fit"
-									transition:fly={{ x: -200, duration: 800 }}
+								href="/"
+								class=" w-full shadow-2xl border border-gray-400 rounded-lg p-3 min-h-[220px] capitalize flex flex-col justify-between"
+								transition:fly={{ y: 200, duration:i* 2000 }}
 								>
-									<div class=" w-full  rounded-b-lg">
-										<img class="w-full h-full object-cover rounded-t-lg " src={ser.img} alt="" />
-										<div
-											class=" capitalize bottom-0 left-0 h-1/2 w-full bg-[#000000df] backdrop-blur-[4px] p-2 rounded-b-lg text-white flex flex-col gap-3"
-										>
-											<h1 class="text-lg font-bold uppercase">{ser.name}</h1>
-											<p class="">
-												{ser.disc}
-											</p>
-										</div>
-									</div>
+									
+										<img class="w-12 h-12 object-cover rounded-full p-2 bg-white" src={ser.img} alt="" />
+										
+											<div>
+												<h1 class="text-lg font-bold uppercase">{ser.name}</h1>
+												<p class="">
+													{ser.disc}
+												</p>
+											</div>
+											<p class="custom-text-2 text-4xl">{ser.p}</p>
+										
+									
 								</a>
+								{/if}
 							{/each}
 						</div>
 					</div>

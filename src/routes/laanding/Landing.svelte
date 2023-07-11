@@ -12,60 +12,12 @@
 	import TopComponent from './TopComponent.svelte';
 
 	// @ts-nocheck
-
-	import Icon from 'svelte-icons-pack/Icon.svelte';
-	import AiOutlineLink from 'svelte-icons-pack/ai/AiOutlineLink';
-	import AiFillGithub from 'svelte-icons-pack/ai/AiFillGithub';
 	import { fly, fade, slide } from 'svelte/transition';
 	import { onMount, afterUpdate } from 'svelte';
 	import IntersectionObserver from 'svelte-intersection-observer';
 	import { dragMe } from './dragable';
 
-	const arrOb = [1, 1, 1, 1, 1, 1];
-	const services = [
-		{ name: 'build websites', disc: 'Web development backend / frontend', img: '/webdevv.png' },
-		{
-			name: 'Bussiness data analysis',
-			disc: 'lets  boost your business with the power of data analyses (Excel and PowerBi)',
-			img: '/dataanaly.jfif'
-		},
-		{ name: 'graphic design', disc: 'professional graphic design', img: '/graphics.jfif' }
-	];
-	const icns = [
-		{ name: 'nest js', icon: 'https://img.icons8.com/color/48/nestjs.png' },
-		{
-			name: 'next js',
-			icon: 'https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png'
-		},
-		{ name: 'express js', icon: 'https://img.icons8.com/office/16/express-js.png' },
-		{ name: 'react', icon: 'https://img.icons8.com/clouds/100/react.png' },
-		{
-			name: 'sveltekit',
-			icon: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg'
-		},
-		{ name: 'firebase', icon: 'https://img.icons8.com/color/48/google-firebase-console.png' },
-		{ name: 'mongodb', icon: 'https://img.icons8.com/color/48/mongodb.png' },
-		{ name: 'postgresql', icon: 'https://img.icons8.com/plasticine/100/postgreesql.png' },
-		{ name: 'photoshop', icon: 'https://img.icons8.com/bubbles/50/adobe-photoshop.png' },
-		{ name: 'AI', icon: 'https://img.icons8.com/arcade/64/ai.png' },
-		{ name: 'excel', icon: 'https://img.icons8.com/color/48/microsoft-excel-2019--v1.png' },
-		{ name: 'powerBi', icon: 'https://img.icons8.com/color/48/power-bi.png' }
-	];
-
-	const cont = [
-		{
-			name: 'Linkedin',
-			img: '/linkedin.gif',
-			link: 'https://www.linkedin.com/in/akanbi-joseph-10783219a/'
-		},
-		{ name: 'twitter', img: '/twitter.gif', link: 'https://twitter.com/programmer_dex' },
-		{
-			name: 'whatsapp',
-			img: '/whatsapp.gif',
-			link: 'https://api.whatsapp.com/send?phone=2349064923080&text=Hello%20JAO'
-		},
-		{ name: 'Linkedin', img: '/github.gif', link: 'https://github.com/Dxtobi/' }
-	];
+	
 	let animate = false;
 	onMount(() => {
 		animate = true;
@@ -75,6 +27,15 @@
 	 * @type {HTMLElement}
 	 */
 	let node;
+	/**
+	 * @type {HTMLElement}
+	 */
+	let node2;
+
+	/**
+	 * @type {HTMLElement}
+	 */
+	 let node1;
 
 	let correctElement = '#top';
 	const compTags = ['#top', '#projects', '#tools', '#service', '#blog', '#contact'];
@@ -124,24 +85,32 @@
 		<IntersectionObserver element={node} let:intersecting>
 			<!-- top section -->
 			<div>
-				<section id="top">
+				<section id="top" class="">
 					<TopComponent />
 				</section>
 
 				<!-- my projects -->
-				<section id="projects" class="pb-6 ">
-					<ProjectList  />
-				</section>
+				<IntersectionObserver element={node2} let:intersecting>
+					<section id="projects" bind:this={node2} class="pb-6 ">
+						<ProjectList {intersecting} />
+					</section>
+				</IntersectionObserver>
+				
+				<!-- service list -->
+				<IntersectionObserver element={node1} let:intersecting>
+					<section id="service" bind:this={node1}>
+						<ServiceList {intersecting}/>
+					</section>
+				</IntersectionObserver>
 
+				
 				<!-- tools i use -->
-				<section id="tools" bind:this={node} class="bg-blue-400 min-h-screen overflow-x-clip">
+				<section id="tools" bind:this={node} class=" overflow-x-clip">
 					<ToolsList {intersecting}  />
 				</section>
 
-				<!-- service list -->
-				<section id="service">
-					<ServiceList />
-				</section>
+				
+				
 
 				<!-- blog posts -->
 				<section id="blog">

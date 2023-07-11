@@ -1,8 +1,9 @@
 <script>
 	import Landing from "./laanding/Landing.svelte";
 
+
 	export let data;
-	console.log(data)
+	//console.log(data)
 </script>
 
 <svelte:head>
@@ -24,7 +25,7 @@
 	<meta name="twitter:image" content="https://i.pinimg.com/564x/75/46/30/7546306dbc194f5b555c3ff6cf44a91b.jpg">
 </svelte:head>
 
-<section>
+<section class="">
 	<Landing/>
 </section>
 

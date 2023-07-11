@@ -2,13 +2,13 @@
 	
 	import RiLogoTwitterFill from "svelte-icons-pack/ri/RiLogoTwitterFill";
 	import Icon from 'svelte-icons-pack/Icon.svelte';
-	
+	import { fly, fade, slide } from 'svelte/transition';
+	import ThemeSwitch from "./ThemeSwitch.svelte";
 </script>
 
-<header class='flex justify-between p-3 items-center fixed top-0 left-0 w-full  backdrop-blur z-40'>
-	<div><img src='https://i.pinimg.com/564x/d8/19/4f/d8194fcedc2f2e630eca12f1c054851b.jpg' alt="avatar" class="w-[40px] h-[40px] rounded-xl"/></div>
-	<div class="font-bold logo-font text-2xl">JAO</div>
-	<a href="https://twitter.com/programmer_dex"><Icon size={'30'} color={'#1d9bf0'} src={RiLogoTwitterFill}/></a>
+<header class='flex justify-between p-3 items-center fixed top-0 left-0 w-full  backdrop-blur z-40' >
+	<div transition:fly={{ y: -200, duration: 1000 }} class="font-bold logo-font text-2xl">JAO</div>
+	<ThemeSwitch/>
 </header>
 
 

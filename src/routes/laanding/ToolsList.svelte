@@ -36,11 +36,9 @@
 <section class="w-full md:w-[70%] m-auto grid place-items-center min-h-[90vh] overflow-x-clip" >
 					<div class="p-5 w-full">
 						<div class="my-5 text-2xl w-fit">
-							<div>Recently Used</div>
+							<div class="">Recently Used</div>
 							<div class="w-full flex gap-3 my-2">
-								<span class="w-[50%] h-[4px] rounded-full bg-[#1198f8]" />
-								<span class="w-[20%] h-[4px] rounded-full bg-[#f8c211]" />
-								<span class="w-[30%] h-[4px] rounded-full bg-[#03910c]" />
+								<span class="w-[30%] h-[4px] rounded-full bg-[#b7b7b7]" />
 							</div>
 						</div>
 						
@@ -49,7 +47,7 @@
 							{#if intersecting}
 								<div
 									transition:fly={{ y: 100, duration: i * 1000 }}
-									class=" shadow-2xl border border-blue-500 py-3 rounded-sm w-[25vw] md:w-[20%] flex flex-col items-center gap-2"
+									class=" shadow-2xl border border-blue-500 py-3 rounded-sm w-[25vw] md:w-[20%] flex flex-col items-center justify-between gap-2 h-[120px]"
 								>
 									<div><img width="48" height="48" alt="" src={icn.icon} /></div>
 									<div class="capitalize">{icn.name}</div>
