@@ -37,7 +37,7 @@
 </script>
 
 <section
-	class="w-full md:w-[70%] m-auto flex flex-col  py-20 h-[120vh] md:min-h-screen  relative"
+	class="w-full md:w-[70%] m-auto flex flex-col  py-20 md:min-h-screen  relative"
 	id="top"
 >
 	<div class="h-full">
@@ -61,7 +61,7 @@
 				>
 			</div>
 			<div
-				class="w-full my-4 md:my-auto rounded-2xl relative flex justify-center items-center bg-green-500 h-full"
+				class="w-full my-4 md:my-auto rounded-2xl relative flex justify-center items-center  h-full"
 				transition:slide={{ axis: 'y', duration: 300 }}
 			>
 				<img
