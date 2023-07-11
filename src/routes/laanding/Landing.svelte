@@ -88,6 +88,8 @@
 				<section id="top" class="">
 					<TopComponent />
 				</section>
+				<br/>
+				<br/>
 
 				<!-- my projects -->
 				<IntersectionObserver element={node2} let:intersecting>

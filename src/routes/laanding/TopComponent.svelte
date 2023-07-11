@@ -61,7 +61,7 @@
 				>
 			</div>
 			<div
-				class="w-full my-4 md:my-auto rounded-2xl relative flex justify-center items-center "
+				class="w-full my-4 md:my-auto rounded-2xl relative flex justify-center items-center bg-green-500 h-full"
 				transition:slide={{ axis: 'y', duration: 300 }}
 			>
 				<img
@@ -70,26 +70,28 @@
 					class="img-pics flex-1"
 					transition:fly={{ y: 200, x:0, duration: 900 }}
 				/>
-				
-			</div>
-		</div>
-	</div>
-	<div
-					class="javascript-class logo-font rounded-full py-1 px-10 left-1  bottom-[13rem] hover:shadow-none"
+
+				<div
+					class="javascript-class logo-font rounded-full py-1 px-10 left-1  bottom-[55%] hover:shadow-none"
 					transition:fly={{ y: -200, x:0, duration: 1000 }}
 				>
 					JavaScript
 				</div>
 				<div
-					class="node-class logo-font rounded-full py-1 px-10 right-1  bottom-[30vh]  hover:shadow-none"
+					class="node-class logo-font rounded-full py-1 px-10 right-1  bottom-[30%]  hover:shadow-none"
 					transition:fly={{ y: 200, x: 0, duration: 3000 }}
 				>
 					NodeJS
 				</div>
 				<div
-					class="css-class logo-font rounded-full py-1 px-10 right-[4.7rem] bottom-[60vh] hover:shadow-none"
+					class="css-class logo-font rounded-full py-1 px-10 right-[4.7rem] bottom-[70%] hover:shadow-none"
 					transition:fly={{ y: -200, x:0, duration: 4000 }}
 				>
 					CSS
 				</div>
+				
+			</div>
+		</div>
+	</div>
+	
 </section>
