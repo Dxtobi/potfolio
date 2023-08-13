@@ -46,7 +46,7 @@
 							{#each icns as icn, i}
 							{#if intersecting}
 								<div
-									transition:fly={{ y: 100, duration: i * 1000 }}
+									transition:fly={{ y: 100, duration: i * 300 }}
 									class=" shadow-2xl border border-blue-500 py-3 rounded-sm w-[25vw] md:w-[20%] flex flex-col items-center justify-between gap-2 h-[120px]"
 								>
 									<div><img width="48" height="48" alt="" src={icn.icon} /></div>

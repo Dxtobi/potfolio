@@ -37,22 +37,19 @@
 								<a
 								href={ob.app}
 								class="h-[30vh] w-full shadow-2xl  rounded-lg "
-								transition:fly={{ y: 100, duration: i * 2000 }}>
+								transition:fly={{ x: 100, duration: i * 500 }}>
 								<div class="h-full w-full relative rounded-lg">
-									<img class="w-full h-full object-cover rounded-lg" src={ob.img} alt="" />
-									<div
-										class=" absolute bottom-0 left-0 h-full w-full bg-[#dbd8d3ad] p-2 rounded-lg text-black flex flex-col gap-3 justify-end backdrop-blur"
-									>
-										<h1 class="text-lg font-bold uppercase">{ob.name}</h1>
-										<p class=" line-clamp-2">
+									<div class=" absolute bottom-0 left-0 h-full w-full border-2 p-2 rounded-lg  flex flex-col gap-3 items-center justify-center text-center">
+										<p class="text-lg font-bold uppercase">{ob.name}</p>
+										<p class=" line-clamp-2 	">
 										{ob.disc}
 										</p>
-										<div class="flex gap-2 items-start justify-between text-sm flex-col w-full">
+										<div class="flex gap-2 items-center justify-between text-sm flex-col w-full text-center ">
 											<a href="https://github.com/dxtobi" target="_blank" class="flex items-center gap-1"
-												><Icon src={AiFillGithub} size={'30'} color="black" />Get Code</a
+												>Get Code</a
 											>
 											<a href={ob.app} target="_blank" class="flex items-center gap-1"
-												><Icon src={AiOutlineLink} size={'30'} color="black" />View app</a
+												>View app</a
 											>
 										</div>
 									</div>
