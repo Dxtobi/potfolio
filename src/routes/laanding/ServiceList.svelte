@@ -38,8 +38,8 @@
 								{#if intersecting}
 								<a
 								href="/"
-								class=" w-full shadow-2xl border border-gray-400 rounded-lg p-3 min-h-[220px] capitalize flex flex-col justify-between"
-								transition:fly={{ x: -100, duration:i* 700 }}
+								class=" w-full shadow-2xl border border-gray-400 rounded-lg p-3 min-h-[220px] capitalize flex flex-col justify-between mb-4"
+								transition:fly={{ y: -100, duration:i* 700 }}
 								>
 									
 										<img class="w-12 h-12 object-cover rounded-full p-2 bg-white" src={ser.img} alt="" />

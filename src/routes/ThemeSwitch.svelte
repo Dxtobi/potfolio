@@ -25,12 +25,12 @@
     }
 
     #theme-toggle:not(:checked) + label {
-        @apply bg-amber-500;
-        box-shadow: inset 10px 12px 1px 1px #ffffff;
+        @apply bg-white;
+        box-shadow: inset 10px 12px 1px 1px #000000;
     }
 
     #theme-toggle:checked + label {
-        @apply bg-transparent;
-        box-shadow: inset -10px -12px 1px 1px #262626;
+        @apply bg-black;
+        box-shadow: inset -10px -12px 1px 1px #f0f0f0;
     }
 </style>

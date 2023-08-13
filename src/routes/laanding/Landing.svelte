@@ -99,14 +99,14 @@
 				
 				<!-- service list -->
 				<IntersectionObserver element={node1} let:intersecting>
-					<section id="service" bind:this={node1}>
+					<section id="service" bind:this={node1} class="my-3">
 						<ServiceList {intersecting}/>
 					</section>
 				</IntersectionObserver>
 
 				
 				<!-- tools i use -->
-				<section id="tools" bind:this={node} class=" overflow-x-clip">
+				<section id="tools" bind:this={node} class=" overflow-x-clip my-2" >
 					<ToolsList {intersecting}  />
 				</section>
 
@@ -114,12 +114,12 @@
 				
 
 				<!-- blog posts -->
-				<section id="blog">
+				<section id="blog" class="my-3">
 					<BlogPosts  />
 				</section>
 
 				<!-- Contact -->
-				<div id="contact">
+				<div id="contact" class="my-3">
 					<Contact  />
 				</div>
 

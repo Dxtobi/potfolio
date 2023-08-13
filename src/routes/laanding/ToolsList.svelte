@@ -42,12 +42,12 @@
 							</div>
 						</div>
 						
-						<div class="flex flex-wrap justify-between items-start gap-3 w-full" >
+						<div class="flex flex-wrap justify-between items-start gap-3 w-full " >
 							{#each icns as icn, i}
 							{#if intersecting}
 								<div
 									transition:fly={{ y: 100, duration: i * 300 }}
-									class=" shadow-2xl border border-blue-500 py-3 rounded-sm w-[25vw] md:w-[20%] flex flex-col items-center justify-between gap-2 h-[120px]"
+									class=" shadow-2xl border border-blue-500 py-3 rounded-sm w-[25vw] md:w-[20%] flex flex-col items-center justify-between gap-2 h-[120px] mb-4"
 								>
 									<div><img width="48" height="48" alt="" src={icn.icon} /></div>
 									<div class="capitalize">{icn.name}</div>
