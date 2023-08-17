@@ -13,13 +13,13 @@
 			disc: 'A Movie Repo',
 			img: 'https://pbs.twimg.com/media/F0ipvOfX0AAevdx?format=jpg&name=small'
 		},
+		
 		{
-			app: 'https://earninggigs.vercel.app/',
-			name: 'Earngigs',
-			disc: 'A social Media boosting project',
+			app: 'https://sneakybite.vercel.app',
+			name: 'Sneakybite',
+			disc: 'A Food ordering app (demo) project',
 			img: 'https://pbs.twimg.com/media/Fzs4ZnWWAAAC_pq?format=jpg&name=medium'
 		},
-		
 		{
 			app: 'https://sumerizer.vercel.app/',
 			name: 'ShortMan',
