@@ -75,10 +75,7 @@
 	}
 </script>
 
-<svelte:head>
-	<title>WELCOME PAGE FOR TOBI-JAO</title>
-	<meta name="description" content="Discover a captivating portfolio website showcasing a collection of exceptional work. Explore the creative vision and artistic talent of TOBi-JAO" />
-</svelte:head>
+
 
 <section class="overflow-clip">
 	{#if animate}
